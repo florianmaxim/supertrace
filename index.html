@@ -1,0 +1,114 @@
+
+<html>
+<head>
+	<title>Supertrace</title>
+
+	<link rel="icon" type="image/png" href="icon_76.png" sizes="76x76"/>
+
+	<link rel="favicon" type="image/png" href="icon_76.png" sizes="76x76"/>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+
+	<link rel="apple-touch-icon" sizes="76x76" href="icon_76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="icon_120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="icon_152.png">
+
+	<script src="three.min.js"></script>
+	<script src="DeviceOrientationControls.js"></script>
+	<script src="OrbitControls.js"></script>
+	<style>
+	@font-face { font-family: 'Outrun';
+             src: url('Outrun.otf') }
+
+ @font-face { font-family: 'Stark';
+            src: url('Stark.otf') }
+		body{
+			margin:0;
+			padding:0;
+			overflow:hidden;
+      font-family: 'Menlo';
+		}
+
+    #info{
+      position: fixed;
+      top:8%;
+      left:50%;
+			transform: translateX(-50%);
+      font-size: 35vw;
+			font-family: Outrun;
+      color: white;
+			align:center;
+			line-height: 0.8em;
+			text-shadow: 10px 10px 10px #ffffff;
+    }
+
+		#info2{
+      position: fixed;
+      top:30%;
+      left:50%;
+			transform: translateX(-50%);
+      font-size: 20vw;
+			font-family: Outrun;
+      color: black;
+			z-index: 10;
+			align:center;
+			line-height: 0.8em;
+			text-shadow: 10px 10px 10px #ffffff;
+    }
+
+		#info3{
+      position: fixed;
+      top:38%;
+      left:50%;
+			transform: translateX(-50%);
+      font-size: 30vw;
+			font-family: Outrun;
+      color: white;
+			align:center;
+			line-height: 0.8em;
+			2px 2px 2px #FF0000;
+		  text-shadow: 10px 10px 10px #ffffff;
+    }
+
+		#info4{
+      position: fixed;
+			width:80%;
+      bottom:10%;
+			left:50%;
+			transform: translateX(-50%);
+      font-size: 1.4vh;
+			font-family: 'Stark';
+      color: black;
+			padding:2%;
+			border:2px solid black;
+			border-radius: 25px;
+			text-align:center;
+			line-height: 1.8em;
+			letter-spacing: 1.6em;
+			display: block;
+			text-shadow: 3px 3px #ffffff;
+    }
+		</style>
+</head>
+<body>
+  <div id="info">
+		Super
+	</div>
+	<div id="info2">
+	</div>
+	<div id="info3">
+		Trace
+	</div>
+
+	<div id="info4">
+		LEAVE A BALL</br>TO</br> FIND BACK!
+	</div>
+
+  <script type="text/javascript" src="Position.js"></script>
+	<script type="text/javascript" src="Compass.js"></script>
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
